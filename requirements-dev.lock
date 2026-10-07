@@ -1,0 +1,6 @@
+# Versions the tests and the wheel were built with (checked 2026-10-08, all older than 7 days).
+langchain-core==1.6.6
+httpx==0.28.1
+pytest==9.1.1
+build==1.6.1
+hatchling==1.32.4

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling==1.32.4"]
+build-backend = "hatchling.build"
+
+[project]
+name = "langchain-looot"
+version = "0.1.0"
+description = "LangChain tools for the looot API: search a catalog of 2,500+ data endpoints, inspect the price, run, and check the balance."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "looot" }]
+keywords = ["langchain", "looot", "tools", "agents", "enrichment", "serp", "email"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Typing :: Typed",
+]
+dependencies = [
+  "langchain-core>=1.6.6,<2",
+  "httpx>=0.28.1,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "build==1.6.1"]
+
+[project.urls]
+Homepage = "https://looot.ai"
+Documentation = "https://docs.looot.ai"
+Source = "https://github.com/loootai/langchain-looot"
+API = "https://api.looot.ai/openapi.json"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/langchain_looot"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["live: calls looot's free public routes over the network"]
+addopts = "-m 'not live'"
