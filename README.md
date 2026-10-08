@@ -2,6 +2,15 @@
 
 LangChain tools for [looot](https://looot.ai). looot gives an agent one token and one prepaid balance for 2,500+ data API endpoints: work emails, people and company search, Google results, web pages, news. The agent searches the catalog, sees the price before it runs, and pays per call. A failed call costs nothing.
 
+## Install for agents
+
+```bash
+pip install "langchain-looot @ git+https://github.com/loootai/langchain-looot.git@v0.1.0"
+claude mcp add --transport http looot https://api.looot.ai/mcp
+```
+
+See also: [awesome-looot-use-cases](https://github.com/loootai/awesome-looot-use-cases) (copy-paste recipes) and [awesome-gtm](https://github.com/loootai/awesome-gtm) (open-source GTM tools).
+
 This package wraps the looot REST API as five `BaseTool` subclasses from `langchain-core`.
 
 | Tool | REST call | Cost |
