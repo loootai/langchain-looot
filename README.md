@@ -1,4 +1,8 @@
+<p align="center"><img src="assets/hero.png" alt="langchain-looot: LangChain tools for 2,500+ data endpoints" width="100%"></p>
+
 # langchain-looot
+
+[![License](https://img.shields.io/github/license/loootai/langchain-looot)](LICENSE) [![Release](https://img.shields.io/github/v/release/loootai/langchain-looot)](https://github.com/loootai/langchain-looot/releases) [![Docs](https://img.shields.io/badge/docs-docs.looot.ai-12A06A)](https://docs.looot.ai)
 
 LangChain tools for [looot](https://looot.ai). looot gives an agent one token and one prepaid balance for 2,500+ data API endpoints: work emails, people and company search, Google results, web pages, news. The agent searches the catalog, sees the price before it runs, and pays per call. A failed call costs nothing.
 
