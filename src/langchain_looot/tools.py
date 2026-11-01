@@ -68,7 +68,7 @@ class SearchInput(BaseModel):
 class LoootSearchCatalog(_LoootTool):
     name: str = "looot_search_catalog"
     description: str = (
-        "Search the looot catalog of 2,500+ data API endpoints (work emails, people and company search, "
+        "Search the looot catalog of 4,200+ data API endpoints (work emails, people and company search, "
         "Google results, web pages, news) by the task you want done. Free. Returns ranked rows with "
         "endpoint ids, prices and job ids. Call this first, then looot_inspect, then looot_run."
     )

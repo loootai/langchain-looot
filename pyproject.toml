@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "langchain-looot"
 version = "0.1.0"
-description = "LangChain tools for the looot API: search a catalog of 2,500+ data endpoints, inspect the price, run, and check the balance."
+description = "LangChain tools for the looot API: search a catalog of 4,200+ data endpoints, inspect the price, run, and check the balance."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
@@ -28,7 +28,7 @@ dev = ["pytest==9.1.1", "build==1.6.1"]
 Homepage = "https://looot.ai"
 Documentation = "https://docs.looot.ai"
 Source = "https://github.com/loootai/langchain-looot"
-API = "https://api.looot.ai/openapi.json"
+API = "https://docs.looot.ai/reference"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/langchain_looot"]
